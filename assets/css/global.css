@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+/**Boot Css**/
+.center{
+    max-width: 1290px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.w33{
+    width: 33.3%;
+    padding: 0 10px;
+}
+
+.w50{
+    padding: 0 2% ;
+    width: 50%;
+}
+
+.clear{
+    clear: both;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+/**Estilizaçao**/
+
+header{
+    background-color: #111111;
+    padding: 25px 0;
+}
+
+header .center .logo{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+header .center .logo a:hover{
+    color: #daa520;
+    cursor: pointer; 
+}
+
+header .center .desktop ul{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav.desktop a{
+    color: #7d7d7d;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav.desktop a:hover{
+    color: #daa520;
+    
+}
+
+header .center .desktop ul li{
+    margin-left: 30px;
+}
+
+header .center nav.mobile{
+    display: block;
+}
+
+header .center nav.mobile div.btn-mobile{
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: none;
+}
+header .center nav.mobile div.btn-mobile i{
+    color: white;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+header .center nav.mobile ul{
+    top: 85px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    display: none;
+}
+
+header .center nav.mobile ul li{
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    padding: 2% 0%;
+    border-bottom: 1px solid #7d7d7d;
+    background-color: white;
+}
+
+header .center nav.mobile ul a{
+    text-decoration: none;
+    color: #daa520;
+    font-weight: bold;
+    display: block;
+}
+
+header .center nav.mobile ul li:hover{
+    transition: 0.5s;
+    background-color:#7d7d7d;
+}
+
+section.back-main{
+    width: 100%;
+    height: 80vh;
+    background-image: url("../img/background.png");
+    background-size: cover;
+    position: relative;
+}
+
+section.back-main .overlay{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;   
+    background-color:rgba(51,51,51,0.4);
+}
+
+section.back-main form{
+    width: 98%;
+    max-width: 600px;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+section.back-main form h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+section.back-main form input[type=email]{
+    width: 100%;
+    height: 66px;
+    background-color: white;
+    color: #333;
+    font-size: 22px;
+    padding: 1rem;
+    margin: 1rem 0rem;
+    border-radius: 2rem;
+}
+
+section.back-main form input[type=submit]{
+    width: 100%;
+    height: 66px;
+    background-color: #daa520;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+section.back-main form input[type=submit]:hover{
+    background-color: #c47e1d;
+    transition: 0.5s;
+}
+
+section.sobre{
+    padding: 40px 0;
+}
+
+
+section.sobre h2 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+section.sobre p{
+    font-size: 16px;
+    color: #444;
+    margin-top: 10px;
+}
+
+section.sobre img{
+    max-height: 400px;
+    max-width: 400px;
+    
+}
+
+section.servicos{
+    padding: 40px 0;
+    background-color: #e2e2e2;
+}
+
+section.servicos h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: #999;
+    text-align: center;
+}
+
+section.servicos .box-esp{
+    margin: 40px 0;
+    text-align: center;
+}
+section.servicos .box-esp h3{
+    font-size: 40px;
+    color: #daa520;
+    font-size: 40px;
+}
+
+section.servicos .box-esp h4{
+    font-weight: 300;
+    color: #BABABA;
+    font-size: 25px;
+}
+
+section.servicos .box-esp p{
+    font-size: 16px;
+    color: #444;
+    margin-top: 10px;
+}
+
+section.extras{
+    padding: 30px 0;
+    background-color: #c47e1d;
+}
+
+section.extras .servicos-container,.container-depo{
+    padding: 0 50px;
+}
+
+section.extras h2{
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.container-depo .single-depo{
+    padding: 15px 0;
+    border-bottom: 1px solid #daa520;
+}
+
+.container-depo .single-depo p {
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+}
+
+.container-depo .single-depo p.nome-autor{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+section.extras .servicos-container ul{
+    margin: 20px 0;
+}
+
+section.extras .servicos-container ul li{
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+}
+
+footer{
+    padding: 20px 0.2%;
+    background-color: #333;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+footer.fixed{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/**Mapa Contato Page**/
+
+#map{
+    width: 100%;
+    height: 400px;
+}
+
+/**Contato Page**/
+
+.contato-container{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contato-container input[type=text]{
+    margin: 8px 0;
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    font-size: 16px;
+    color: #444;
+    border: 1px solid #ccc;
+    max-width: 700px;
+}
+
+.contato-container input[type=email]{
+    margin: 8px 0;
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    font-size: 16px;
+    color: #444;
+    border: 1px solid #ccc;
+    max-width: 700px;
+}
+
+.contato-container textarea{
+    margin: 8px 0;
+    width: 100%;
+    height: 120px;
+    padding-left: 8px;
+    font-size: 16px;
+    color: #444;
+    border: 1px solid #ccc;
+    max-width: 700px;
+    resize: none;
+    padding: 0.2rem;
+}
+
+.contato-container input[type=submit]{
+    background-color: #daa520;
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: 50%;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.contato-container input[type=submit]:hover{
+    background-color: #c47e1d;
+    transition: 0.5s;
+}
+
+/**Responsivo**/
+
+@media screen and (width < 1120px) {
+    .w50{
+        width: 100%;
+        margin: 0 auto;
+        float: none !important;
+    }
+
+    section.sobre p{
+        margin: 2% 0;
+        margin-top: 10px;
+    }
+
+    section.sobre img{
+        max-height: 500px;
+        max-width: 500px;
+        margin: 2% 0%;
+        float: none !important;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (width < 768px) {
+    header nav.desktop{
+        display: none;
+    }
+    header .center nav.mobile{
+        display: block;
+    }
+
+    header .center nav.mobile div.btn-mobile{
+        display: block;
+    }
+
+    .w50{
+        padding: 20px;
+        width: 100%;
+    }
+    .w33{
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media screen and (width < 545px){
+    section.sobre img{
+        max-height: 300px;
+        max-width: 300px;
+        
+    }
+
+    section.back-main form h2{
+        font-size: 23px;
+    }
+}
